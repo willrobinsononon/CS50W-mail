@@ -1,0 +1,351 @@
+@keyframes hide {
+    0% {
+        color: inherit;
+        max-height: 100%;
+        line-height: 125%;
+        padding: 6px;
+    }
+    40% {
+        color: rgba(0,0,0,0);
+        max-height: 100%;
+        line-height: 125%;
+        padding: 6px;
+    }
+    100% {
+        color: rgba(0,0,0,0);
+        max-height: 0px;
+        line-height: 0px;
+        padding: 0px;
+    }
+}
+
+@keyframes show {
+    0% {
+        color: rgba(0,0,0,0);
+        max-height: 0px;
+        line-height: 0px;
+        padding: 0px;
+    }
+    60% {
+        color: rgba(0,0,0,0);
+        max-height: 100%;
+        line-height: 125%;
+        padding: 6px;
+    }
+    100% {
+        color: inherit;
+        max-height: 100%;
+        line-height: 125%;
+        padding: 6px;
+    }
+}
+
+
+@keyframes hrHide {
+    0% {
+        border-top-color: rgba(0,0,0,.1);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    40% {
+        border-top-color: rgba(0,0,0,0);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    100% {
+        border-top-color: rgba(0,0,0,0);
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@keyframes hrShow {
+    0% {
+        border-top-color: rgba(0,0,0,0);
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    60% {
+        border-top-color: rgba(0,0,0,0);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    100% {
+        border-top-color: rgba(0,0,0,.1);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@keyframes btnHide {
+    0% {
+        color: #007bff;
+        border-color: #007bff;
+        max-height: 100%;
+        line-height: 125%;
+        padding: 6px;
+    }
+    40% {
+        color: rgba(0,0,0,0);
+        border-color: rgba(0,0,0,0);
+        max-height: 100%;
+        line-height: 125%;
+        padding: 6px;
+    }
+    100% {
+        color: rgba(0,0,0,0);
+        border-color: rgba(0,0,0,0);
+        max-height: 0px;
+        line-height: 0px;
+        padding: 0px;
+    }
+}
+
+@keyframes btnShow {
+    0% {
+        color: rgba(0,0,0,0);
+        border-color: rgba(0,0,0,0);
+        max-height: 0px;
+        line-height: 0px;
+        padding: 0px;
+    }
+    60% {
+        color: rgba(0,0,0,0);
+        border-color: rgba(0,0,0,0);
+        max-height: 100%;
+        line-height: 125%;
+        padding: 6px;
+    }
+    100% {
+        color: #007bff;
+        border-color: #007bff;
+        max-height: 100%;
+        line-height: 125%;
+        padding: 6px;
+    }
+}
+
+@keyframes archiveHead {
+    0% {
+        height: 100%;
+        line-height: 1.5;
+        padding: 6px;
+        border-width: 2px;
+    }
+    70% {
+        height: 100%;
+        line-height: 1.5;
+        padding: 6px;
+        border-width: 2px;
+    }
+    100% {
+        height: 0px !important;
+        line-height: 0px;
+        padding: 0px;
+        border-width: 0px;
+    }
+}
+
+@keyframes unarchiveHead {
+    0% {
+        height: 100%;
+        line-height: 1.5;
+        padding: 6px;
+        border-width: 2px;
+    }
+    70% {
+        height: 100%;
+        line-height: 1.5;
+        padding: 6px;
+        border-width: 2px;
+    }
+    100% {
+        height: 0px !important;
+        line-height: 0px;
+        padding: 0px;
+        border-width: 0px;
+    }
+}
+
+@keyframes archive {
+    0% {
+        opacity:1;
+        left:0px;
+        max-height: 100%;
+        line-height: 1.5;
+    }
+    70% {
+        opacity:1;
+        left:0px;
+        max-height: 100%;
+        line-height: 1.5;
+    }
+    100% {
+        opacity:0;
+        left:1000px;
+        max-height: 0px;
+        line-height: 0px;
+    }
+}
+
+@keyframes unarchive {
+    0% {
+        opacity:1;
+        right:0px;
+        max-height: 100%;
+        line-height: 1.5;
+    }
+    70% {
+        opacity:1;
+        right:0px;
+        max-height: 100%;
+        line-height: 1.5;
+    }
+    100% {
+        opacity:0;
+        right:1000px;
+        max-height: 0px;
+        line-height: 0px;
+    }
+}
+
+
+textarea {
+    min-height: 400px;
+}
+
+.email {
+    width: 100%;
+    
+}
+
+.emailHead{
+    cursor: pointer;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.read > .emailHead{
+    background-color: rgb(196, 233, 255);
+}
+
+div[data-open="true"] > .emailHead {
+    border-radius: 8px 8px 0 0;
+}
+
+.email > div {
+    border-style: solid;
+    margin: -2px 0 0 -2px;
+    padding: 6px;
+}
+
+.email > div > div {
+    text-overflow: ellipsis;
+    display: inline-block;
+    overflow:hidden;
+}
+
+.emailCol {
+    width: 25%;
+    font-weight: bold;
+}
+
+.subjectCol {
+    width: 40%;
+}
+
+.timeCol {
+    width: 35%;
+    font-weight: bold;
+}
+
+.reader-view {
+    border-color: #000;
+    border-radius: 0 0 8px 8px;
+    text-wrap: wrap;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+.reader-view > hr {
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+.reader-view > button {
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+.hide {
+    animation-name: hide;
+}
+
+.show {
+    animation-name: show;
+}
+
+.hrHide {
+    animation-name: hrHide;
+}
+
+.hrShow {
+    animation-name: hrShow;
+}
+
+.btnHide {
+    animation-name: btnHide;
+}
+
+.btnShow {
+    animation-name: btnShow;
+}
+
+button:disabled,
+button[disabled] {
+    cursor:default;
+}
+
+.archive {
+    position: relative;
+    animation-name: archive;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+.unarchive {
+    position: relative;
+    animation-name: unarchive;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+.archiveHead {
+    position: relative;
+    animation-name: archiveHead;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+.unarchiveHead {
+    position: relative;
+    animation-name: unarchiveHead;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+.unselectable {
+    user-select: none;
+}
+
+#form-error {
+    font-weight: 500;
+    color: red;
+}
